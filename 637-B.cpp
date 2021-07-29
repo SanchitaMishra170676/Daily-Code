@@ -31,7 +31,7 @@ signed main(void){
 		for(ll i=0;i<n-1;i++){
 			if(arr[i]> arr[i-1] && arr[i] > arr[i+1]){
 				pk[i]=1;
-			}
+			} 
 			else{
 				pk[i]=0;
 			}

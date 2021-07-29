@@ -12,7 +12,21 @@ signed main(void){
     ll t; 
 	cin>>t;
 	while(t--){
-		
+		ll n;
+		cin>>n;
+		ll ma = INT_MIN, mi= INT_MAX;
+		while(n--){
+			ll x;
+			cin>>x;
+			if(ma < x){
+				ma=x;
+			}
+			if(mi>x){
+				mi=x;
+			}
+		}
+
+		cout<<2*(ma-mi)<<"\n";
 	}
 } 
 

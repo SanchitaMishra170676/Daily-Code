@@ -42,7 +42,7 @@ void printdeque(deque<string> &queue){
 	}
 }  
 
-// To print vector
+// To print vector  
 void printvector(vector<ll> &v){
 	ll n = v.size();
 	for(int i=0;i<n;i++){

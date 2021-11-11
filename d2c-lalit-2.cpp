@@ -11,10 +11,22 @@ signed main(void){
   ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-  //   ll t; 
-  // cin>>t;
-  // while(t--){
-    
-  // }
-    cout<<(int)sqrt(8);
+    ll t; 
+  cin>>t;
+  vector<int>v;
+  while(t--){
+    int temp; cin>>temp;
+    v.pb(temp);
+  }
+
+    int count =0;
+  for(int i=0,j=2;j<v.size();j++,i++){
+    int mid=(i+j)/2;
+      if((v[mid]>v[i] && v[mid]<v[j]) || (v[mid]<v[i] && v[mid]>v[j])){
+        count++;
+      }
+  }
+
+  cout<<count; 
+
 } 

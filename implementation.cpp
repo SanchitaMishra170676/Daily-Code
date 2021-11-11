@@ -14,7 +14,7 @@ struct node *start = NULL;
 
 void insert_at_beginning(ll n){
 	struct node *temp;
-	temp = (struct node*)malloc(sizeof(struct node));
+	temp = (struct node*)malloc(sizeof(struct node));	
 	temp->data = n;
 	if(start==NULL){
 		// cout<<"strt="<<start<<"\n";

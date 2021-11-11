@@ -7,7 +7,7 @@ using namespace std;
 
 
 
-// sort in reverse
+// sort in reverse 
 bool rev(const  &a, const  &b)
 {
     return (a > b);
@@ -29,7 +29,7 @@ bool pair_sec_rev(const pair<ll,ll> &a,
 
 // sort according to first element in revese order
 bool pair_first_rev(const pair<ll,ll> &a,
-              const pair<ll,ll> &b)
+              const pair<ll,ll> &b)  
 {
     return (a.first > b.first);
 }
@@ -57,6 +57,15 @@ void printvectorpair(vector<pair<ll,ll>> &v){
 		cout<<v[i].first<<" "<<v[i].second<<"\n";
 	}
 } 
+
+
+
+
+
+
+
+
+
 
 //=================================== ALGO =====================================
 
@@ -91,7 +100,7 @@ void DFSUtil(ll u, vector<ll> adj[], vector<bool> &visited)
 }
 
 // Depth first search
-void DFS(vector<ll> adj[], ll V)
+void DFS(vector<ll> adj[], ll V) 
 {
     vector<bool> visited(V, false);
     for (ll u=0; u<V; u++)
@@ -141,6 +150,9 @@ void sieveprime(vector<ll> &v, ll n)
 }
 
 
+
+
+
 signed main(void){
 	ios_base::sync_with_stdio(false);
     cin.tie(NULL);  
@@ -151,3 +163,16 @@ signed main(void){
 	}
 }   
   
+
+
+
+
+
+
+
+
+
+
+
+
+

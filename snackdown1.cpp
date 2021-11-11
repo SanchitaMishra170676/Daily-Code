@@ -8,13 +8,23 @@
 using namespace std;
 
 signed main(void){
-  ios_base::sync_with_stdio(false);
+	ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-  //   ll t; 
-  // cin>>t;
-  // while(t--){
-    
-  // }
-    cout<<(int)sqrt(8);
+    ll t; 
+	cin>>t;
+	while(t--){
+		ll arr[3]={0};
+		for(ll i=0;i<5;i++){
+			int t; cin>>t;
+			arr[t]++;
+		}
+		// watch(arr[0]);
+		if(arr[1]>arr[2])
+			cout<<"INDIA\n";
+		else if(arr[2]>arr[1])
+			cout<<"ENGLAND\n";
+		else
+			cout<<"DRAW\n";
+	}
 } 

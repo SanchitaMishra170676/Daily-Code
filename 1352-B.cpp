@@ -6,15 +6,16 @@
 #define int long long
 using namespace std;
 
+	
 signed main(void){
 	ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    cin.tie(NULL); 
     ll t; 
 	cin>>t;
 	while(t--){
 		ll n,k;
 		cin>>n>>k;
-		ll b=k-1;
+		ll b=k-1; 
 		ll ans1,ans2,r1,r2;
 		bool flag1=false, flag2=false;
 		ans1= 1*b;

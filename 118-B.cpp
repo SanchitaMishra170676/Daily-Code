@@ -4,7 +4,7 @@
 #define pb push_back
 #define int long long
 #define pi 3.14159265358979323846
-#define watch(xxx) cerr<<(#xxx)<<" is "<<xxx<<"\n";   
+#define watch(xxx) cerr<<(#xxx)<<" is "<<xxx<<"\n";
 using namespace std;
 
 signed main(void){
@@ -12,8 +12,8 @@ signed main(void){
     cin.tie(NULL);
     cout.tie(NULL);
     ll t; 
-	cin>>t;
-	while(t--){ 
-		  
+	cin>>t; 
+	while(t--){
+		
 	}
 } 

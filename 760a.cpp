@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 #define ll long long
 #define mod 1000000007
-#define pb push_back
+#define pb push_back 
 #define int long long
 #define pi 3.14159265358979323846
-#define watch(xxx) cerr<<(#xxx)<<" is "<<xxx<<"\n";   
+#define watch(xxx) cerr<<(#xxx)<<" is "<<xxx<<"\n";
 using namespace std;
 
 signed main(void){
@@ -13,18 +13,16 @@ signed main(void){
     cout.tie(NULL);
     ll t; 
 	cin>>t;
-	while(t--){ 
-		  
+	while(t--){
+		ll n=7; 
+		ll a,b,x;
+		cin>>a>>b;
+		n-=2;
+		while(n--)
+		{	
+			cin>>x;
+		}
+
+		cout<<a<<" "<<b<<" "<<(x-a-b)<<"\n";
 	}
 } 
-
-
-
-
-// 5 
-// 4 
-// 3 
-// 2 3 
-// 1 4 
-// 1 3 
-// 1 2 

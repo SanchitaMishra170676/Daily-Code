@@ -1,30 +1,26 @@
 #include <bits/stdc++.h>
 #define ll long long
 #define mod 1000000007
-#define pb push_back
+#define pb push_back 
 #define int long long
 #define pi 3.14159265358979323846
-#define watch(xxx) cerr<<(#xxx)<<" is "<<xxx<<"\n";   
+#define watch(xxx) cerr<<(#xxx)<<" is "<<xxx<<"\n";
 using namespace std;
 
 signed main(void){
 	ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
+    
     ll t; 
 	cin>>t;
-	while(t--){ 
-		  
+	while(t--){
+		ll x; cin>>x;
+
+		ll ns = (int)sqrt(x);
+		ll nc= (int)cbrt(x);
+		ll n6= (int)sqrt(cbrt(x));
+		// cout<<ns<<" "<<nc<<" "<<n6<<" ";
+		cout<<ns+nc-n6<<"\n";
 	}
 } 
-
-
-
-
-// 5 
-// 4 
-// 3 
-// 2 3 
-// 1 4 
-// 1 3 
-// 1 2 

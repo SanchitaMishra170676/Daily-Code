@@ -1,25 +1,22 @@
 #include <bits/stdc++.h>
 #define ll long long
 #define mod 1000000007
-#define pb push_back
+#define pb push_back 
 #define int long long
 using namespace std;
 
-ll fib(ll t){
-	if(t == 0|| t ==1){
-			return t;
-		}
-	return (fib(t-1)+fib(t-2));
+int sumd(int d){
+	if(d<=0)
+		return 0;
+	return (d%10)+sumd(d/10);
 	
 }
 
 signed main(void){
 	ios_base::sync_with_stdio(false);
-    cin.tie(NULL); 
+    cin.tie(NULL);
+    cout.tie(NULL);
     ll t; 
 	cin>>t;
-	ll ans = fib(t-1);
-	cout<<ans;
+	cout<<sumd(t);
 } 
-
-

@@ -27,26 +27,7 @@ void adjacency(vector<int> adj[], int e){
 	}
 }
 
-void BFS(vector<int> adj[], int visited[], int v, int k){
-	queue<int> q;
-	q.push(k);
-		visited[k]=1;
-		// (k is the first value which is unvisited in a component)
-	while(! q.empty()){
-		int val=q.front();
-		cout<<val<<" ";
-		q.pop();
 
-		for(int i=0;i<adj[val].size();i++){
-			if(!visited[adj[val][i]]){
-				q.push(adj[val][i]);
-				visited[adj[val][i]]=1;
-			}
-		}
-
-	}
-
-}
 
 
  vector<int> ans,v;
@@ -64,27 +45,19 @@ signed main(void){
 	ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    ll v,e; 
-	cin>>v>>e;
-	vector<int> adj[v+1];
+    ll n,e; 
+	cin>>n>>e;
+	vector<int> adj[n+1];
 	adjacency(adj,e);
-	print_adj(adj,v);
-		cout<<"\n";
-
-	// BFS
-	int visited[v+1]={0};
-	for(int i=1;i<v+1;i++){
-		if(!visited[i]){
-			BFS(adj,visited,v,i);
+	int count =0;
+	v.resize(n+1);
+	fill(v.begin(),v.end(),0);
+	for(int i=1;i<=n;i++){
+		if(!v[i]){
+			count++;
+			watch(count);
 		}
+		dfs(adj,i);
 	}
-
-	//DFS
-	int visited[v+1]={0};
-	for(int i=1;i<v+1;i++){
-		if(!visited[i]){
-			DFS(adj,visited,v,i);
-		}
-	}
-
+	cout<<count;
 } 

@@ -151,7 +151,23 @@ void sieveprime(vector<ll> &v, ll n)
 
 
 
-
+ll ncr(ll n, ll r)
+{
+    if (r > n || r < 0 || n < 0)
+    {
+        return 0;
+    }
+    ll i, k, p = 1;
+    r = min(r, n - r);
+    k = n;
+    for (i = 1; i <= r; i++)
+    {
+        p = p * k;
+        p = p / i;
+        k--;
+    }
+    return p;
+}
 
 signed main(void){
 	ios_base::sync_with_stdio(false);
